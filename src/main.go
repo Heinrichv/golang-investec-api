@@ -15,7 +15,6 @@ func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
 
 	myRouter.Use(middleware.JSONResponseMiddleware)
-	myRouter.Use(middleware.OAuthMiddleware)
 
 	myRouter = controllers.InitiateAuthRoutes(myRouter)
 
