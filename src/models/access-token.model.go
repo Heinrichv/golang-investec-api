@@ -1,6 +1,5 @@
 package models
 
-// AccessTokenResponse : access token response model
 type AccessTokenResponse struct {
 	AccessToken string `json:"access_token"`
 	TokenType   string `json:"token_type"`
